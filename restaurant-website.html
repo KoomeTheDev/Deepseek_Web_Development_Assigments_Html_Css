@@ -5,141 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yummy | Fine Dining Experience</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel = "stylesheet "href = "style.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/js/bootstrap.min.js"></script>
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <nav>
-            <a href="#home" class="logo">Yummy</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#contact" class="book-btn">Book a Table</a></li>
-            </ul>
+    <header class="sticky-top bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3 text-danger" href="#home">Yummy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item ms-lg-3">
+                            <a href="#contact" class="btn btn-danger px-4">Book a Table</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>Enjoy Your Healthy Delicious Food</h1>
-                <p>We are team of talented chefs making authentic Kenyan dishes with passion and love</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="cta-button">Book a Table</a>
-                    <a href="#" class="video-btn">
-                        <span class="play-icon">▶</span>
-                        <span>Watch Video</span>
-                    </a>
+    <section id="home" class="bg-light py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="display-3 fw-bold mb-4">Enjoy Your Healthy Delicious Food</h1>
+                    <p class="lead text-muted mb-4">We are team of talented chefs making authentic Kenyan dishes with passion and love</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#contact" class="btn btn-danger btn-lg px-5">Book a Table</a>
+                        <button class="btn btn-outline-danger btn-lg d-flex align-items-center gap-2">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                            </svg>
+                            Watch Video
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="hero-image">
-                <img src="assets/img/hero-dish.jpg" alt="Delicious Food">
+                <div class="col-lg-6">
+                    <img src="assets/img/hero-dish.jpg" alt="Delicious Food" class="img-fluid rounded shadow-lg">
+                </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="section-label">ABOUT US</div>
-        <h2 class="section-title">Learn More <span class="highlight">About Us</span></h2>
-        <p class="section-subtitle">Where Passion Meets Flavor</p>
-        <div class="about-container">
-            <div class="about-text">
-                <p>Welcome to Yummy, where culinary excellence meets warm hospitality. For over two decades, we've been crafting unforgettable dining experiences that celebrate the finest ingredients and time-honored cooking traditions.</p>
-                <p>Our journey began with a simple vision: to create a space where families and friends could gather over exquisite food in an atmosphere that feels like home. Every dish that leaves our kitchen is prepared with passion, precision, and a deep respect for the culinary arts.</p>
-                <p>Led by our award-winning chef, our team sources the freshest local ingredients and combines them with innovative techniques to create dishes that honor tradition while embracing creativity. We believe that dining is not just about food—it's about creating memories that last a lifetime.</p>
+    <section id="about" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <p class="text-danger text-uppercase fw-semibold mb-2">ABOUT US</p>
+                <h2 class="display-5 fw-bold mb-3">Learn More <span class="text-danger">About Us</span></h2>
+                <p class="text-muted fs-5">Where Passion Meets Flavor</p>
             </div>
-            <div class="about-image"></div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <p class="mb-3">Welcome to Yummy, where culinary excellence meets warm hospitality. For over two decades, we've been crafting unforgettable dining experiences that celebrate the finest ingredients and time-honored cooking traditions.</p>
+                    <p class="mb-3">Our journey began with a simple vision: to create a space where families and friends could gather over exquisite food in an atmosphere that feels like home. Every dish that leaves our kitchen is prepared with passion, precision, and a deep respect for the culinary arts.</p>
+                    <p class="mb-0">Led by our award-winning chef, our team sources the freshest local ingredients and combines them with innovative techniques to create dishes that honor tradition while embracing creativity. We believe that dining is not just about food—it's about creating memories that last a lifetime.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/img/about.jpg" alt="About Yummy" class="img-fluid rounded shadow">
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Menu Section -->
-    <section id="menu" class="menu">
-        <div class="menu-container">
-            <div class="section-label">OUR MENU</div>
-            <h2 class="section-title">Featured Dishes</h2>
-            <p class="section-subtitle">Culinary Masterpieces Crafted with Love</p>
-            <div class="menu-grid">
-                <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="assets/img/grilled-salmon.jpg" alt="Grilled Salmon">
-                    </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3>Grilled Salmon</h3>
-                            <span class="menu-item-price">Kshs 1,200</span>
+    <section id="menu" class="bg-light py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <p class="text-danger text-uppercase fw-semibold mb-2">OUR MENU</p>
+                <h2 class="display-5 fw-bold mb-3">Featured Dishes</h2>
+                <p class="text-muted fs-5">Culinary Masterpieces Crafted with Love</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/grilled-salmon.jpg" class="card-img-top" alt="Grilled Salmon">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Grilled Salmon</h5>
+                                <span class="text-danger fw-bold">Kshs 1,200</span>
+                            </div>
+                            <p class="card-text text-muted">Fresh Atlantic salmon grilled to perfection, served with roasted vegetables and lemon butter sauce.</p>
                         </div>
-                        <p>Fresh Atlantic salmon grilled to perfection, served with roasted vegetables and lemon butter sauce.</p>
                     </div>
                 </div>
-
-                <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="assets/img/ribeye-steak.jpg" alt="Ribeye Steak">
-                    </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3>Ribeye Steak</h3>
-                            <span class="menu-item-price">Kshs 1,800</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/ribeye-steak.jpg" class="card-img-top" alt="Ribeye Steak">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Ribeye Steak</h5>
+                                <span class="text-danger fw-bold">Kshs 1,800</span>
+                            </div>
+                            <p class="card-text text-muted">Prime 12oz ribeye, perfectly aged and grilled, accompanied by truffle mashed potatoes and seasonal greens.</p>
                         </div>
-                        <p>Prime 12oz ribeye, perfectly aged and grilled, accompanied by truffle mashed potatoes and seasonal greens.</p>
                     </div>
                 </div>
-
-                <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="assets/img/lobster-risotto.jpg" alt="Lobster Risotto">
-                    </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3>Lobster Risotto</h3>
-                            <span class="menu-item-price">Kshs 1,500</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/lobster-risotto.jpg" class="card-img-top" alt="Lobster Risotto">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Lobster Risotto</h5>
+                                <span class="text-danger fw-bold">Kshs 1,500</span>
+                            </div>
+                            <p class="card-text text-muted">Creamy Arborio risotto with succulent lobster meat, white wine, and fresh herbs.</p>
                         </div>
-                        <p>Creamy Arborio risotto with succulent lobster meat, white wine, and fresh herbs.</p>
                     </div>
                 </div>
-
-                <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="assets/img/truffle-pasta.jpg" alt="Truffle Pasta">
-                    </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3>Truffle Pasta</h3>
-                            <span class="menu-item-price">Kshs 1,000</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/truffle-pasta.jpg" class="card-img-top" alt="Truffle Pasta">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Truffle Pasta</h5>
+                                <span class="text-danger fw-bold">Kshs 1,000</span>
+                            </div>
+                            <p class="card-text text-muted">Handmade fettuccine tossed in a rich black truffle cream sauce with Parmesan shavings.</p>
                         </div>
-                        <p>Handmade fettuccine tossed in a rich black truffle cream sauce with Parmesan shavings.</p>
                     </div>
                 </div>
-
-                <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="assets/img/duck-confit.jpg" alt="Duck Confit">
-                    </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3>Duck Confit</h3>
-                            <span class="menu-item-price">Kshs 1,400</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/duck-confit.jpg" class="card-img-top" alt="Duck Confit">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Duck Confit</h5>
+                                <span class="text-danger fw-bold">Kshs 1,400</span>
+                            </div>
+                            <p class="card-text text-muted">Traditional French duck leg confit, slow-cooked until tender, served with crispy potatoes and cherry gastrique.</p>
                         </div>
-                        <p>Traditional French duck leg confit, slow-cooked until tender, served with crispy potatoes and cherry gastrique.</p>
                     </div>
                 </div>
-
-                <div class="menu-item">
-                    <div class="menu-item-image">
-                        <img src="assets/img/chocolate-souffle.jpg" alt="Chocolate Soufflé">
-                    </div>
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3>Chocolate Soufflé</h3>
-                            <span class="menu-item-price">Kshs 600</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/chocolate-souffle.jpg" class="card-img-top" alt="Chocolate Soufflé">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Chocolate Soufflé</h5>
+                                <span class="text-danger fw-bold">Kshs 600</span>
+                            </div>
+                            <p class="card-text text-muted">Decadent dark chocolate soufflé with a molten center, served with vanilla bean ice cream.</p>
                         </div>
-                        <p>Decadent dark chocolate soufflé with a molten center, served with vanilla bean ice cream.</p>
                     </div>
                 </div>
             </div>
@@ -147,62 +165,71 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="section-label">CONTACT US</div>
-        <h2 class="section-title">Reservations & Contact</h2>
-        <p class="section-subtitle">We'd Love to Hear From You</p>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="info-item">
-                    <h3>Address</h3>
-                    <p>Opposite Hunters Matatu Terminal<br>Kasarani Stadium<br>Kasarani, Nairobi</p>
+    <section id="contact" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <p class="text-danger text-uppercase fw-semibold mb-2">CONTACT US</p>
+                <h2 class="display-5 fw-bold mb-3">Reservations & Contact</h2>
+                <p class="text-muted fs-5">We'd Love to Hear From You</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3">Address</h5>
+                        <p class="text-muted">Opposite Hunters Matatu Terminal<br>Kasarani Stadium<br>Kasarani, Nairobi</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3">Phone</h5>
+                        <p class="text-muted">+254 712 345 678</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3">Email</h5>
+                        <p class="text-muted">reservations@254superdishes.com</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3">Opening Hours</h5>
+                        <p class="text-muted mb-1">Monday - Thursday: 5:00 PM - 10:00 PM</p>
+                        <p class="text-muted mb-1">Friday - Saturday: 5:00 PM - 11:00 PM</p>
+                        <p class="text-muted mb-0">Sunday: 4:00 PM - 9:00 PM</p>
+                    </div>
                 </div>
-                <div class="info-item">
-                    <h3>Phone</h3>
-                    <p>+254 712 345 678</p>
-                </div>
-                <div class="info-item">
-                    <h3>Email</h3>
-                    <p>reservations@254superdishes.com</p>
-                </div>
-                <div class="info-item">
-                    <h3>Opening Hours</h3>
-                    <p>Monday - Thursday: 5:00 PM - 10:00 PM<br>
-                    Friday - Saturday: 5:00 PM - 11:00 PM<br>
-                    Sunday: 4:00 PM - 9:00 PM</p>
+                <div class="col-lg-8">
+                    <form class="card border-0 shadow-sm p-4">
+                        <div class="mb-3">
+                            <label for="name" class="form-label fw-semibold">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-semibold">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="datetime" class="form-label fw-semibold">Preferred Date & Time</label>
+                            <input type="datetime-local" class="form-control" id="datetime" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label fw-semibold">Special Requests</label>
+                            <textarea class="form-control" id="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-danger w-100 py-2">Submit Reservation</button>
+                    </form>
                 </div>
             </div>
-
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="datetime">Preferred Date & Time</label>
-                    <input type="datetime-local" id="datetime" name="datetime" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Special Requests</label>
-                    <textarea id="message" name="message"></textarea>
-                </div>
-                <button type="submit" class="submit-button">Submit Reservation</button>
-            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="social-links">
-            <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="Instagram">📷</a>
-            <a href="#" aria-label="Twitter">🐦</a>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="d-flex justify-content-center gap-3 mb-3">
+                <a href="#" class="text-white text-decoration-none fs-4">f</a>
+                <a href="#" class="text-white text-decoration-none fs-4">📷</a>
+                <a href="#" class="text-white text-decoration-none fs-4">🐦</a>
+            </div>
+            <p class="text-center mb-0">&copy; 2024 Yummy Restaurant. All Rights Reserved. | Designed by Koome.Dev</p>
         </div>
-        <p>&copy; 2024 Yummy Restaurant. All Rights Reserved. | Designed by Koome.Dev</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
